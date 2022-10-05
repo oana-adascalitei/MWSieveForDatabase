@@ -1,4 +1,4 @@
-TLDR: To run the Mordell-Weil sieve over the database (or a submit of it), load MainCode.m in Magma.
+TLDR: To run the Mordell-Weil sieve over the database, load MainCode.m in Magma.
 
 We first extract the genus 2 curves from the LMFDB whose Jacobian have analytic rank 2 
 and the automorphism group over Q contains C2 x C2. We store the set of curves in BiellipticGenus2List.m, where we also 
