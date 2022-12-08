@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////
-//																 //
+//								 //
 // Let X be a genus 2 bielliptic curve over Q, with no known     //
 // point in X(Q).                                                //
 //                                                               //
