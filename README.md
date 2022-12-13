@@ -4,7 +4,7 @@ We first extract the genus 2 curves from the LMFDB whose automorphism group over
 separate them into curves which have a rank 0 elliptic curve quotient, and those that do not.
 
 We write some new functions to be able to process the database. They can be found in NewFunctions.m. 
-The function BiellipticModel takes a curve from the database and returns an isomorphic model of the form y^2 = a6*x^6+a4*x^4+a2*x^2+a0. We run this function over all the curves with no rank 0 quotient in the database. This is done in allcurves.m.
+The function BiellipticModel takes a curve from the database and returns an isomorphic model of the form y^2 = a6x^6+a4x^4+a2x^2+a0. We run this function over all the curves with no rank 0 quotient in the database. This is done in allcurves.m.
 
 We pre-compute the set of three smallest primes of good ordinary reduction.
 
