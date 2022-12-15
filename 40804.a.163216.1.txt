@@ -1,0 +1,1 @@
+{"label": "40804.a.163216.1", "conductor": "40804", "minimal_model": "[[0, 0, 0, 0, -2, 0, 1], [1]]", "number_of_rational_points": "8", "method": "bielliptic_quadratic_Chabauty", "bielliptic_model": "[4, 0, -8, 0, 0, 0, 1]", "size_omega_set": "6", "smallest_ordinary_primes": "[5, 7, 11]", "ordinary_primes_for_modulus": "[5, 7]", "auxiliary_integer": "1", "MWS_primes": "[5, 109]"}
