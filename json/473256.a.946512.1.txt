@@ -1,1 +1,0 @@
-{"label": "473256.a.946512.1", "conductor": "473256", "minimal_model": "[[313, 0, 240, 0, 61, 0, 5], [0, 1, 0, 1]]", "number_of_rational_points": "0", "method": "only_MW_sieve", "remark": "violation_of_Hasse_principle"}
