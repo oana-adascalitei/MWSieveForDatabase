@@ -1,0 +1,1 @@
+{"label": "326041.a.326041.1", "conductor": "326041", "minimal_model": "[[-4, -17, -25, -17, -11, -3, -1], [1]]", "number_of_rational_points": "2", "method": "rank_0_quotient"}
