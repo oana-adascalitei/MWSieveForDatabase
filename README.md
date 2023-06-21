@@ -37,4 +37,4 @@ whose Jacobians decompose up to isogeny as E1 x E2, where rk(E1(Q)) = rk(E2(Q)) 
 
 * TorsionStatistics: We count the number of curves whose Jacobians have torsion subgroups of order 1,2,3,4,5,6,respectively
 
-* final_mws_primes: we store necessary MWS primes with respect to each element omega in Omega of each curve, and we consolidate this information in necessary_MWS_primes which stores the necessary MWS primes for each of the curves in the set
+* final_mws_primes: we store necessary MWS primes with respect to each element omega in Omega of each curve, and we consolidate this information in necessary_MWS_primes which stores the necessary MWS primes for each of the curves in the set. This information can the read from json.
