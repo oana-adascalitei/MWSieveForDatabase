@@ -37,6 +37,8 @@ whose Jacobians decompose up to isogeny as E1 x E2, where rk(E1(Q)) = rk(E2(Q)) 
   
 * MWSPrimes: we store the pre-computed mws_primes with respect to aux_int = 1, 2, 4. Not all primes will be needed in the MW sieve, the necessary ones will be stored in necessary_MWS_primes found in final_mws_primes
 
+* MainCode: we run the Mordell-Weil sieve (MWSieve) inputing the pre-computed information on all curves from allcurves.m, which is successful in eliminating all the extra points resulted from the QC computations stored in fake_allcurves.m
+
 * sieve_with_no_known_points: Let X be a genus 2 bielliptic curve over Q, with no known point in X(Q).                                   This is a simple sieve to show that X(Q) = empty set, so QC is not necessary for this case. We apply this sieve to two curves in our database.
 
 * TorsionStatistics: We count the number of curves whose Jacobians have torsion subgroups of order 1,2,3,4,5,6,respectively
