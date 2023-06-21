@@ -1,4 +1,4 @@
-//here we store the pre-computed mws_primes with respect to aux_int = 1, 2, 4
+//here we store the pre-computed mws_primes with respect to aux_int = 1 (MWSPrimes), aux_int = 2 (MWSPrimes2), aux_int = 4 (MWSPrimes4)
 //we need a lower bound for mws_primes for the curve indexed by 115
 
 LowerBound := [115];
