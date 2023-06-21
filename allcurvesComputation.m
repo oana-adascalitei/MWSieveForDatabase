@@ -1,4 +1,4 @@
-//compute set of known points
+//compute set of known points (pts)
 //compute information from generators(J);
 //compute projE1E2
 //compute three smallest primes of good ordinary reduction
