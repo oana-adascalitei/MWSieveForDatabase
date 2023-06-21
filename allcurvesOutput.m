@@ -1,9 +1,9 @@
 //we store 
-//the smallest three primes of ordinary reduction 
-//the sets of known points on all curves
-//Mumford representations for generators of the free part of Jacobian
-//Mumford representation for the torsion part of the Jacobian
-//orders of generators for the torsion part
+//the smallest three primes of ordinary reduction (ordinary_pr)
+//the sets of known points on all curves (pts)
+//Mumford representations for generators of the free part of Jacobian (gens)
+//Mumford representation for the torsion part of the Jacobian (tor_bas)
+//orders of generators for the torsion part (tor_ord)
 _<x> := PolynomialRing(Rationals());
 
 ordinary_pr := [
