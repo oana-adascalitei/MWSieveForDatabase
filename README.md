@@ -1,5 +1,7 @@
 This GitHub repository pertains to the paper "RATIONAL POINTS ON RANK 2 GENUS 2 BIELLIPTIC CURVES IN THE LMFDB" by Francesca Bianchi and Oana Padurariu.
 
+Magma was run on a machine with chip Apple M1, while Sage was run in Cocalc.
+
 We first extract the genus 2 curves from the LMFDB whose automorphism group over Q contains C2 x C2. Their Jacobians are isogeous to a product of elliptic curves E1 x E2. In BiellipticGenus2List.m we store those curves for which rank(E1(Q))+rank(E2(Q)) = 2, where we also 
 separate them into curves which have a rank 0 elliptic curve quotient (Rank0.m), and those that do not (allcurves.m).
 
