@@ -15,6 +15,8 @@ We take the extra cosets from the bielliptic quadratic Chabauty computation and 
 Description of files:
 * json: we store for each curve the conclusive information consisting of the LMFDB label, conductor, minimal model, number of rational points, method used (bielliptic quadratic Chabauty or rank 0 quotient), coefficients of bielliptic model, size of the Omega set, smallest ordinary primes, ordinary primes used for the modulus, auxiliary integer, necessary MWS primes
 
+* MWSieveCode: code taken from https://github.com/steffenmueller/QCMod
+
 * Bielliptic LMFDB: We consider all genus 2 curves C in the LMFDB whose automorphism group over Q contains C2 x C2 (automorphism group V4, D4, and D6, respectively). Then Jac(C) ~ E1 x E2 and we save those such that rk(E1(Q))+rk(E2(Q)) = 2.
 
 * BiellipticGenus2List: All bielliptic genus 2 curves from the LMFDB such that Jac(C) ~ E1 x E2, with rk(E1(Q))+rk(E2(Q)) = 2. For each of them we find a bielliptic model y^2 = a6x^6+a4x^4+a2x^2+a0
