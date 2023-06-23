@@ -1,8 +1,15 @@
 load "fake_allcurves.m";
 
 //we store the necessary MWS primes necessary_pr with respect to each element omega in Omega for each curve
-//we consolidate this information in necessary_MWS_primes, which stores the necessary MWS primes for each of the curves in the set. This information can the read from json.
+//we consolidate this information in necessary_MWS_primes, which stores the necessary MWS primes for each of the curves in the set. 
+//This information can the read from json.
 
+//we have data from Sage concerning three primes of good ordinary reduction, done_pr records which subset of these primes 
+//is necessary for a successful sieve together with the auxiliary integer. 
+
+//we consolidate the auxiliary integers data from done_pr 
+//we consolidate the data from done_pr in ordinary_primes_modulus
+//the modulus can be extracted from these data and is recorded in json
 
 necessary_pr := [
     [
