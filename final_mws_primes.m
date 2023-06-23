@@ -1,8 +1,7 @@
 load "fake_allcurves.m";
 
-//we store the necessary MWS primes with respect to each element omega in Omega
-//we consolidate this information in necessary_MWS_primes 
-//which stores the necessary MWS primes for each of the curves in the set. This information can the read from json.
+//we store the necessary MWS primes necessary_pr with respect to each element omega in Omega for each curve
+//we consolidate this information in necessary_MWS_primes, which stores the necessary MWS primes for each of the curves in the set. This information can the read from json.
 
 
 necessary_pr := [
