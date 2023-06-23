@@ -21,9 +21,7 @@ load "allcurvesOutput.m";
 load "allcurves.m";
 load "fake_allcurves.m";
 load "MWSPrimes.m";
-//SetLogFile("done.log");
-//SetLogFile("necessary_primes.log");
-//SetLogFile("necessary_MWS_primes.log");
+
 ExtraF1 := [ 109, 164, 300 ]; //trivial torsion where we use aux_int = 1,2,4
 Failed := [];
 N := 4; //exponents used in the modulus for all QC primes
