@@ -9,6 +9,7 @@
 //done_pr: we originally define it as done_pr := [[[] : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_fake_coeffs]];
 //we have data from Sage concerning three primes of good ordinary reduction, done_pr records which subset of these primes 
 //is necessary for a successful sieve together with the auxiliary integer. The modulus can be extracted from these data.
+//see the file final_mws_primes.m
 
 //necessary_pr: we record the necesarry primes used for the Mordell-Weil sieve. The pre-computed sets of MWS primes are quite
 //large, but we will only need a subset of them
