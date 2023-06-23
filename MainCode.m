@@ -12,6 +12,7 @@
 
 //necessary_pr: we record the necesarry primes used for the Mordell-Weil sieve. The pre-computed sets of MWS primes are quite
 //large, but we will only need a subset of them
+//see the file final_mws_primes.m
 
 
 load "MWSieveCode.m";
