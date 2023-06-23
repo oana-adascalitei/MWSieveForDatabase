@@ -1,5 +1,19 @@
 //the code is an adaptation of the Mordell-Weil sieve from 
 //https://github.com/steffenmueller/QCMod
+
+//we are computing data which is recorded in the json files:
+
+//done_fake: we originally define it as done_fake := [[false : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_fake_coeffs]]; 
+//if the sieve is successful each boolean must become true
+
+//done_pr: we originally define it as done_pr := [[[] : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_fake_coeffs]];
+//we have data from Sage concerning three primes of good ordinary reduction, done_pr records which subset of these primes 
+//is necessary for a successful sieve together with the auxiliary integer. The modulus can be extracted from these data.
+
+//necessary_pr: we record the necesarry primes used for the Mordell-Weil sieve. The pre-computed sets of MWS primes are quite
+//large, but we will only need a subset of them
+
+
 load "MWSieveCode.m";
 load "allcurvesOutput.m";
 load "allcurves.m";
@@ -9,7 +23,6 @@ load "MWSPrimes.m";
 //SetLogFile("necessary_primes.log");
 //SetLogFile("necessary_MWS_primes.log");
 ExtraF1 := [ 109, 164, 300 ]; //trivial torsion where we use aux_int = 1,2,4
-// previously ExtraF1 := [ 40, 164, 182, 205, 215, 300, 336 ]; 
 Failed := [];
 N := 4; //exponents used in the modulus for all QC primes
 R<x> := PolynomialRing(Rationals());
@@ -17,7 +30,7 @@ done_fake := [[false : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_
 done_pr := [[[] : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_fake_coeffs]];
 necessary_pr := [[[] : i in [1..#all_fake_coeffs[index][1]]]: index in [1..#all_fake_coeffs]];
 //we can run it over all the curves in the database, or some subset given by indices
-//for index in [i : i in [1..#all_fake_coeffs] | i in [295,333] eq false] do
+//for index in [i : i in [1..10] | i in [295,333] eq false] do
 for index in [i : i in [1..#allcurves] | i in [295,333] eq false] do
   print("Curve"),index; print allcurves[index]; print("Omega has size"),#all_fake_coeffs[index][1]; 
   X:=HyperellipticCurve(allcurves[index]);
@@ -166,26 +179,3 @@ for index in [i : i in [1..#allcurves] | i in [295,333] eq false] do
 end for;
 assert Failed eq [];
 print "Failed",Failed;
-
-
-
-//Sort(SetToSequence(SequenceToSet(necessary_pr[25][10])));
-
-
-/*
-for i in [1..#allcurves] do
-  if done_pr[i] eq [[0]: j in [1..OmegaSizes[i]]] then
-    print i;
-  end if;
-end for;
-
-
-143
-242
-259
-298
-305
-352
-*/
-
-
